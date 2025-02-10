@@ -124,7 +124,7 @@ impl Into<f32> for Float32FitnessValue {
 impl Display for Float32FitnessValue {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         // display with maximum precision, aka as many digits as possible
-        write!(f, "{:.}", self.0)
+        write!(f, "{}", self.0)
     }
 }
 
